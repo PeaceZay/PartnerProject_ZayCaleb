@@ -1,0 +1,18 @@
+.bodycontainer {
+    display: flex;
+    flex-direction: column;
+}
+.infocard {
+    display: flex;
+    flex-direction: row;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+}
+
+.rightside {
+    display: flex;
+    flex-direction: column;
+}
