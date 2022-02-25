@@ -12,12 +12,14 @@ body {
 
 header {
     width: 100%;
+    margin-bottom: 15px;
 }
 
 .logoContainer {
     display: flex;
     width: 40%;
     max-width: 300px;
+    max-height: 300px;
     margin: 10px auto;
     padding: auto;
 }
@@ -36,7 +38,7 @@ header {
 }
 
 .mobile-nav {
-    margin: 30px auto 0;
+    margin: 10px auto 0;
     padding: 0;
     display: block;
     /* position: absolute; */
@@ -129,7 +131,7 @@ footer ul li {
 
 }
 footer ul li a {
-    background: url(/images/icons.jpg) no-repeat 0 0;
+    background: url(images/icons.jpg) no-repeat 0 0;
     display: block;
     height: 44px;
     margin: 0;
@@ -167,7 +169,7 @@ footer ul li #pinterest:hover {
     header{
         width: 960px;
         margin: 0 auto;
-        padding: 44px 0 36px;
+        padding: 15px 0 26px;
         text-align: center;
     }
     nav {
@@ -179,7 +181,9 @@ footer ul li #pinterest:hover {
         /* width: 100%; */
     }
     .logoContainer img{
-        width: 340px;
+        max-width: 200px;
+        max-height: 200px;
+        /* width: 340px; */
     }
     .nav-list li {
         display: inline-block;
@@ -195,7 +199,7 @@ footer ul li #pinterest:hover {
         border: none;
         position: sticky;
         margin: 0;
-        padding: 36px 0 0;
+        padding: 26px 0 0;
         /* border: 1px solid red; Remove this before production **********/
         text-align: center;
     }
@@ -274,7 +278,7 @@ footer ul li #pinterest:hover {
 
     }
     footer ul li a {
-        background: url(/images/icons.jpg) no-repeat 0 0;
+        background: url(images/icons.jpg) no-repeat 0 0;
         display: block;
         height: 44px;
         margin: 0;
