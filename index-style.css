@@ -34,7 +34,7 @@ header {
 }
 
 #mobileNavigation {
-    background: url(/images/mobile-menu.png) no-repeat 0 0;
+    background: url(images/mobile-menu.png) no-repeat 0 0;
 }
 
 .mobile-nav {
@@ -90,6 +90,7 @@ header {
 /* Body code goes here */
 main {
     margin: 2% auto 3%;
+    text-align: center;
 }
 
 p {
@@ -133,7 +134,7 @@ footer ul li {
 
 }
 footer ul li a {
-    background: url(/images/icons.jpg) no-repeat 0 0;
+    background: url(images/icons.jpg) no-repeat 0 0;
     display: block;
     height: 44px;
     margin: 0;
@@ -169,14 +170,18 @@ footer ul li #pinterest:hover {
 @media (min-width: 570px) {
     /* Header code goes here */
     header{
-        width: 960px;
+        width: 100%;
         margin: 0 auto;
         padding: 15px 0 26px;
         text-align: center;
     }
     nav {
-        width: 960px;
+        width: 75%;
+        min-width: 500px;
+        max-width: 644px;
+        height: 3rem;
         margin: 0 auto;
+        display: inline-block;
     }
     .logoContainer{
         margin: 0 auto;
@@ -192,7 +197,7 @@ footer ul li #pinterest:hover {
         border: none;
         height: 1em;
         margin: 0;
-        padding: 0 19px;
+        padding: 10px 19px;
         /* border: 1px solid red; Remove this before production **********/
     }
 
@@ -280,7 +285,159 @@ footer ul li #pinterest:hover {
 
     }
     footer ul li a {
-        background: url(/images/icons.jpg) no-repeat 0 0;
+        background: url(images/icons.jpg) no-repeat 0 0;
+        display: block;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        text-indent: -99999px;
+        width: 44px;
+    }
+    footer ul li #twitter {
+        background-position: 0 0;
+    }
+    footer ul li #twitter:hover {
+        background-position: -44px 0;
+    }
+    footer ul li #facebook {
+        background-position: 0 -44px;
+    }
+    footer ul li #facebook:hover {
+        background-position: -44px -44px;
+    }
+    footer ul li #googleplus {
+        background-position: 0 -88px;
+    }
+    footer ul li #googleplus:hover {
+        background-position: -44px -88px;
+    }
+    footer ul li #pinterest {
+        background-position: 0 -132px;
+    }
+    footer ul li #pinterest:hover {
+        background-position: -44px -132px;
+    }
+}
+
+@media (min-width: 980px) {
+    /* Header code goes here */
+    header{
+        width: 100%;
+        margin: 0 auto;
+        padding: 15px 0 26px;
+        text-align: center;
+    }
+    nav {
+        width: 90%;
+        min-width: 700px;
+        max-width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+        display: inline-block;
+    }
+    .logoContainer{
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+    .logoContainer img{
+        max-width: 200px;
+        max-height: 200px;
+        /* width: 340px; */
+    }
+    .nav-list li {
+        display: inline-block;
+        border: none;
+        height: 1em;
+        margin: 0;
+        padding: 10px 19px;
+        /* border: 1px solid red; Remove this before production **********/
+    }
+
+    .nav-list {
+        display: inline-block;
+        border: none;
+        position: sticky;
+        margin: 0;
+        padding: 26px 0 0;
+        /* border: 1px solid red; Remove this before production **********/
+        text-align: center;
+    }
+
+    .nav-list li a{
+        color: #BEBEBE;
+        background-color: #000;
+        border: 2px solid #FFD510;
+        font-family: 'Arial Black', Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0 20px 0;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50%;
+    }
+
+    .nav-a:hover, li.selected a {
+        color: #000;
+        background-color: #BEBEBE;
+    }
+
+    #mobileButton, #mobileExit, .mobile-nav {
+        display: none;
+    }
+
+
+    /* Body Code goes here */
+    main {
+        margin: 2% auto 2%;
+    }
+
+    p {
+        margin: 0 2.5%;
+        padding-left: 1%;
+    }
+
+    /* Footer Code goes here */
+    footer {
+        margin: 0 auto;
+        padding: 36px 0 42px;
+        background: #252525;
+    }
+
+    footer div {
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 0;
+        width: 960px;
+    }
+    footer p {
+        /* display: inline-block; */
+        float: left;
+        color: #fff;
+        line-height: 44px;
+        margin: 0 0 0 10px;
+        padding: 0;
+        width: 400px;
+    }
+    footer ul {
+        display: block;
+        float: right;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: 256px;
+    }
+    footer ul li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        width: 44px;
+
+    }
+    footer ul li a {
+        background: url(images/icons.jpg) no-repeat 0 0;
         display: block;
         height: 44px;
         margin: 0;
