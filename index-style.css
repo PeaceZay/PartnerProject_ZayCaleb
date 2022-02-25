@@ -95,6 +95,8 @@ main {
 p {
     margin: 0 2.5%;
     padding-left: 1%;
+    border: 2px groove black;
+    background-color: grey;
 }
 
 /* Footer code goes here */

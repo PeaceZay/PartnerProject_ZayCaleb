@@ -107,6 +107,8 @@ form {
     /* text-align: center; */
     width: 99%;
     display: block;
+    border: 3px grey groove;
+    margin: 0 auto;
 }
 
 .con-input {
@@ -118,10 +120,12 @@ form {
     border: 1px solid red;
 }
 label {
-    /* display: inline-block; */
-    float: left;
+    display: inline-block;
+    /* float: left; */
     padding: 3px 2%;
     margin: 5px 5px;
+    position: sticky;
+    left: 15%;
     border: 2px solid green;
 }
 
@@ -137,7 +141,20 @@ input {
     margin: 5px auto;
 }
 
+.radial {
+    margin: 0;
+    padding: .75rem;
+    border: 1px solid pink;
+    width: 5rem;
+}
 
+.radial-wrapper {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
 
 input.field {
     /* display: inline-block; */
@@ -168,12 +185,12 @@ textarea {
 
 }
 
-.yes-input {
+/* .yes-input {
     display: block;
     width: 90%;
     height: 90px;
     margin: auto;
-    /* text-align: center; */
+    /* text-align: center; 
     border: 1px solid red;
 }
 
@@ -182,12 +199,19 @@ textarea {
     height: 28px;
     margin: 5%;
     padding: 2px 10px;
-}
+} */
 #yes {
     display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+
 }
 #no {
-    display: block;
+    display: inline-block;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
 }
 
 /* Footer code goes here */
