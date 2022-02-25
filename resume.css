@@ -1,18 +1,325 @@
-.bodycontainer {
-    display: flex;
-    flex-direction: column;
-}
-.infocard {
-    display: flex;
-    flex-direction: row;
-}
-
-.leftside {
-    display: flex;
-    flex-direction: column;
-}
-
-.rightside {
-    display: flex;
-    flex-direction: column;
+@media screen and (min-width: 990px) {
+    *, *:before, *:after {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bodycontainer {
+        display: flex;
+        flex-direction: column;
+        }
+        .infocard {
+        display: flex;
+        flex-direction: row;
+        }
+    
+        .leftside {
+        display: flex;
+        flex-direction: column;
+        }
+    
+        .rightside {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    header {
+        width: 100%;
+    }
+    
+    .logoContainer {
+        display: flex;
+        width: 40%;
+        max-width: 300px;
+        margin: 10px auto;
+        padding: auto;
+    }
+    
+    .logoContainer img{
+        width: 100%;
+        border-radius: 50%;
+    }
+    
+    #logo {
+        margin: auto;
+    }
+    
+    #mobileNavigation {
+        background: url(/images/mobile-menu.png) no-repeat 0 0;
+    }
+    
+    .mobile-nav {
+        margin: 30px auto 0;
+        padding: 0;
+        display: block;
+        /* position: absolute; */
+        /* background: url(/images/mobile-menu.png) no-repeat 0 0; */
+        width: 50px;
+        height: 49px;
+    }
+    .nav-a {
+        background: rgba(0, 0, 0, 0.9);
+        color: #BEBEBE;
+        display: block;
+        font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+        height: 49px;
+        line-height: 49px;
+        margin: 0;
+        padding: 0 15px;
+        text-align: left;
+        text-decoration: none;
+    }
+    
+    .nav-list {
+        border: 3px solid #FFD510;
+        display: none;
+        width: 90%;
+        list-style-type: none;
+        margin: 1px auto;
+        margin-left: 5%;
+        padding: 1px auto;
+        text-align: center;
+        position: absolute;
+        z-index: 1001;
+    }
+    
+    .nav-list li{
+        border-top: 2px solid #FFD510;
+        display: block;
+        /* display: inline-block; */
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    
+    .nav-a:hover, li.selected a {
+        background: rgba(190, 190, 190, 0.9);
+        color: #000;
+    }
+    /* Body code goes here */
+    main {
+        margin: 2% auto 3%;
+    }
+    
+    p {
+        margin: 0 2.5%;
+        padding-left: 1%;
+    }
+    
+    /* Footer code goes here */
+    footer {
+        padding: 10px 0 25px;
+        background: #252525;
+    }
+    
+    footer div {
+        overflow: visible;
+        width: 100%;
+        padding: 10px 0 25px;
+    }
+    footer p {
+        float: none;
+        color: #fff;
+        margin: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    footer ul {
+        float: none;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 256px;
+    }
+    footer ul li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        width: 44px;
+    
+    }
+    footer ul li a {
+        background: url(/images/icons.jpg) no-repeat 0 0;
+        display: block;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        text-indent: -99999px;
+        width: 44px;
+    }
+    footer ul li #twitter {
+        background-position: 0 0;
+    }
+    footer ul li #twitter:hover {
+        background-position: -44px 0;
+    }
+    footer ul li #facebook {
+        background-position: 0 -44px;
+    }
+    footer ul li #facebook:hover {
+        background-position: -44px -44px;
+    }
+    footer ul li #googleplus {
+        background-position: 0 -88px;
+    }
+    footer ul li #googleplus:hover {
+        background-position: -44px -88px;
+    }
+    footer ul li #pinterest {
+        background-position: 0 -132px;
+    }
+    footer ul li #pinterest:hover {
+        background-position: -44px -132px;
+    }
+    
+    @media (min-width: 570px) {
+        /* Header code goes here */
+        header{
+            width: 960px;
+            margin: 0 auto;
+            padding: 44px 0 36px;
+            text-align: center;
+        }
+        nav {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .logoContainer{
+            margin: 0 auto;
+            /* width: 100%; */
+        }
+        .logoContainer img{
+            width: 340px;
+        }
+        .nav-list li {
+            display: inline-block;
+            border: none;
+            height: 1em;
+            margin: 0;
+            padding: 0 19px;
+            /* border: 1px solid red; Remove this before production **********/
+        }
+    
+        .nav-list {
+            display: inline-block;
+            border: none;
+            position: sticky;
+            margin: 0;
+            padding: 36px 0 0;
+            /* border: 1px solid red; Remove this before production **********/
+            text-align: center;
+        }
+    
+        .nav-list li a{
+            color: #BEBEBE;
+            background-color: #000;
+            border: 2px solid #FFD510;
+            font-family: 'Arial Black', Arial, sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0 20px 0;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 50%;
+        }
+    
+        .nav-a:hover, li.selected a {
+            color: #000;
+            background-color: #BEBEBE;
+        }
+    
+        #mobileButton, #mobileExit, .mobile-nav {
+            display: none;
+        }
+    
+    
+        /* Body Code goes here */
+        main {
+            margin: 2% auto 2%;
+        }
+    
+        p {
+            margin: 0 2.5%;
+            padding-left: 1%;
+        }
+    
+        /* Footer Code goes here */
+        footer {
+            margin: 0 auto;
+            padding: 36px 0 42px;
+            background: #252525;
+        }
+    
+        footer div {
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 0;
+            width: 960px;
+        }
+        footer p {
+            /* display: inline-block; */
+            float: left;
+            color: #fff;
+            line-height: 44px;
+            margin: 0 0 0 10px;
+            padding: 0;
+            width: 400px;
+        }
+        footer ul {
+            display: block;
+            float: right;
+            margin: 0;
+            overflow: hidden;
+            padding: 0;
+            width: 256px;
+        }
+        footer ul li {
+            display: block;
+            float: left;
+            list-style: none;
+            margin: 0 10px;
+            padding: 0;
+            width: 44px;
+    
+        }
+        footer ul li a {
+            background: url(/images/icons.jpg) no-repeat 0 0;
+            display: block;
+            height: 44px;
+            margin: 0;
+            padding: 0;
+            text-indent: -99999px;
+            width: 44px;
+        }
+        footer ul li #twitter {
+            background-position: 0 0;
+        }
+        footer ul li #twitter:hover {
+            background-position: -44px 0;
+        }
+        footer ul li #facebook {
+            background-position: 0 -44px;
+        }
+        footer ul li #facebook:hover {
+            background-position: -44px -44px;
+        }
+        footer ul li #googleplus {
+            background-position: 0 -88px;
+        }
+        footer ul li #googleplus:hover {
+            background-position: -44px -88px;
+        }
+        footer ul li #pinterest {
+            background-position: 0 -132px;
+        }
+        footer ul li #pinterest:hover {
+            background-position: -44px -132px;
+        }
+    }
+   
 }
