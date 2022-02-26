@@ -569,7 +569,7 @@ footer ul li #pinterest:hover {
 
     }
     footer ul li a {
-        background: url(/images/icons.jpg) no-repeat 0 0;
+        background: url(images/icons.jpg) no-repeat 0 0;
         display: block;
         height: 44px;
         margin: 0;
