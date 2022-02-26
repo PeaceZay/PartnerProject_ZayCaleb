@@ -93,11 +93,91 @@ main {
     text-align: center;
 }
 
-p {
-    margin: 0 2.5%;
+h1 {
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+    font-size: 2.3rem;
+    text-shadow: -1px 0 rgba(255, 251, 11, .6), 0 1px rgba(255, 251, 11, .6), 1px 0 rgba(255, 251, 11, .6);
+    -webkit-text-stroke: 1px rgba(255, 251, 11, .9);
+    margin-bottom: 20px;
+}
+
+span {
+    background-color: #BEBEBE;
+    padding: 0 2px;
+    border-radius: 9px;
+    border: 1.5px solid black;
+}
+
+h2 {
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+    /* background-color: #BEBEBE; */
+    /* width: 100%; */
+    /* font-size: 109%; */
+    font-size: 1rem;
+    padding-top: 2px;
+    /* text-shadow: -2px 0 rgba(178, 202, 247, .6), 0 2px rgba(178, 202, 247, 0.5), 2px 0 rgba(178, 202, 247, .5); */
+    /* -webkit-text-stroke: 1.2px rgba(12, 40, 202, .8); */
+    text-shadow: -1px 0 rgba(255, 251, 11, .6), 0 1px rgba(255, 251, 11, .6), 1px 0 rgba(255, 251, 11, .6);
+    -webkit-text-stroke: 1px rgba(255, 251, 11, .9);
+
+}
+
+.parallax {
+    height: 100%;
+    min-height: 500px;
+    background-image: url(images/redDwarf.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax2 {
+        height: 100%;
+        min-height: 500px;
+        background-image: url(images/enterpriseWallpaperBetter.jpg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+}
+
+.parallax3 {
+    height: 100%;
+    min-height: 500px;
+    background-image: url(images/asteroid.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax4 {
+    height: 100%;
+    min-height: 500px;
+    background-image: url(images/JupiterRedSpot.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.parallax5 {
+    height: 100%;
+    min-height: 500px;
+    background-image: url(images/webbTeleStars.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main p {
+    margin: 0 auto;
     padding-left: 1%;
+    width: 100%;
+    /* text-align: center; */
     border: 2px groove black;
     background-color: grey;
+    color: #fff;
 }
 
 /* Footer code goes here */
@@ -256,16 +336,17 @@ footer ul li #pinterest:hover {
         margin: 0 auto;
         overflow: hidden;
         padding: 0;
-        width: 960px;
+        width: 100%;
     }
     footer p {
         /* display: inline-block; */
         float: left;
         color: #fff;
-        line-height: 44px;
-        margin: 0 0 0 10px;
+        /* line-height: 24px; */
+        margin: 12px 0 0 5px;
         padding: 0;
-        width: 400px;
+        width: 58%;
+        text-align: left;
     }
     footer ul {
         display: block;
@@ -273,13 +354,13 @@ footer ul li #pinterest:hover {
         margin: 0;
         overflow: hidden;
         padding: 0;
-        width: 256px;
+        width: 226px;
     }
     footer ul li {
         display: block;
-        float: left;
+        float: right;
         list-style: none;
-        margin: 0 10px;
+        margin: 0 10px 0 0;
         padding: 0;
         width: 44px;
 
